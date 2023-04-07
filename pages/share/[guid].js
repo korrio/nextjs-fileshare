@@ -30,7 +30,7 @@ const success = () => {
       <style jsx>{`
         h1 {
           font-size: 130px;
-          color: #65ffcc;
+          color: #c8b370;
           margin:0;
         }
         h2 {
@@ -38,10 +38,12 @@ const success = () => {
           margin-top:15vh;
         }
         h2 a {
-          border-bottom: 5px solid black;
+          color: #fff;
+          border-bottom: 5px solid #fff;
         }
         h2 a:hover {
-          border-bottom: 5px solid #65ffcc;
+          color: #c8b370;
+          border-bottom: 5px solid #c8b370;
         }
         main {
           width:80%;

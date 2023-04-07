@@ -68,7 +68,7 @@ const downloadSuccess = (props) => {
             <style jsx>{`
                 h1 {
                     width: 180px;
-                    color: #65ffcc;
+                    color: #c8b370;
                     margin:0 auto;
                     font-size: 130px;
                 }
@@ -91,7 +91,7 @@ const downloadSuccess = (props) => {
 }
 
 export async function getServerSideProps(context) {
-    await clearOldFiles();
+    // await clearOldFiles();
 
     const exists = fs.existsSync('uploads/' + context.params.guid + '.zip');
     const finished = !fs.existsSync('uploads/' + context.params.guid);
@@ -106,21 +106,21 @@ export async function getServerSideProps(context) {
 
 const clearOldFiles = () => {
 
-    fs.readdir('./uploads', function (err, files) {
-        files.forEach(function (file) {
-            const { birthtime } = fs.statSync('./uploads/' + file)
-            const now = new Date().getTime();
-            const endTime = new Date(birthtime).getTime() + 86400000;
-            if (now > endTime) {
-                fs.removeSync('./uploads/' + file, { recursive: true });
-            }
-        });
-    });
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve();
-        }, 500);
-    });
+    // fs.readdir('./uploads', function (err, files) {
+    //     files.forEach(function (file) {
+    //         const { birthtime } = fs.statSync('./uploads/' + file)
+    //         const now = new Date().getTime();
+    //         const endTime = new Date(birthtime).getTime() + 86400000;
+    //         if (now > endTime) {
+    //             fs.removeSync('./uploads/' + file, { recursive: true });
+    //         }
+    //     });
+    // });
+    // return new Promise(resolve => {
+    //     setTimeout(() => {
+    //         resolve();
+    //     }, 500);
+    // });
 }
 
 

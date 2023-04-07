@@ -4,19 +4,21 @@ html, body {
     font-family: korolev, sans-serif;
     font-weight: 500;
     font-style: normal;
+    background-color: rgb(20, 36, 64); 
+    color: #fff;
 }
 a {
-    color:black;
+    color:#fff;
     text-decoration: none;
 }
 a:hover {
     cursor: pointer;
-    color:#65ffcc;
+    color:#c8b370;
 }
 button, .button {
     padding:10px;
     border-radius: 10px;
-    background: #65ffcc;
+    background: #c8b370;
     margin-top: 20px;
     display: inline-block;
     border: none;

@@ -61,7 +61,7 @@ export default class index extends Component {
         <style jsx>{`
             h1 {
                 font-size: 130px;
-                color: #65ffcc;
+                color: #c8b370;
                 margin:0;
             }
             h2 {

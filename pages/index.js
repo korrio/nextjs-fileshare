@@ -14,8 +14,8 @@ export default function Home() {
 
       <main>
         <TitleCard 
-          title = 'FILESHARE'
-          text = 'Upload some files to share, or download files with a code.'
+          title = 'e2e files sharing'
+          text = 'Upload some files to encrypt, zip and share, or download files with a key code.'
         />
 
         <div className="flex center col-mobile pad-bottom">

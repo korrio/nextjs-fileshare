@@ -1,6 +1,7 @@
 import formidable from 'formidable';
 import fs from 'fs-extra';
 import Server from 'socket.io';
+import { serverConfig } from 'server';
 
 export const config = {
   api: {

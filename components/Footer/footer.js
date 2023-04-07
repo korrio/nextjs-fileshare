@@ -18,7 +18,7 @@ export default function Footer() {
 
             </div>
             <a className={styles.siteLogo} href='https://bryceyoder.com'>
-                <img src="/images/logo.svg" alt="Bryce Yoder"/>
+                <img src="https://dev.socialbureau.io/_next/image/?url=%2Fimages%2Flogo.png&w=128&q=75" alt="Bryce Yoder"/>
             </a>
         </footer>
     )
