@@ -1,3 +1,5 @@
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+
 import Head from 'next/head'
 import TitleCard from 'components/TitleCard/titleCard.js'
 import Layout from 'components/layout.js'
@@ -13,11 +15,14 @@ export default function Home() {
       </Head>
 
       <main>
+        
         <TitleCard 
           title = 'e2e files sharing'
           text = 'Upload some files to encrypt, zip and share, or download files with a key code.'
         />
-
+        <div className="flex center connect-button">
+          <ConnectButton showBalance={true} />
+        </div>
         <div className="flex center col-mobile pad-bottom">
           <LinkCard
             faStyles='fas fa-file-upload'
